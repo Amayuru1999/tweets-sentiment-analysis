@@ -38,3 +38,9 @@ This can be extended to:
 Follow this guide to install Apache Hadoop on Ubuntu system
 
 - [Hadoop Installation Guide](https://medium.com/@abhikdey06/apache-hadoop-3-3-6-installation-on-ubuntu-22-04-14516bceec85)
+
+### 🏃‍♂️ How to Run 
+
+After Hadoop installation follow this to run the Map Reduce job.
+
+- [MapReduce Guide](/documentation/running_guide.md)
