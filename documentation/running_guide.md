@@ -6,20 +6,20 @@
     git clone https://github.com/Amayuru1999/tweets-sentiment-analysis.git
 ```
 
-#### Step 1: Create a input file
+#### Step 2: Create a input file
 
 ```bash
     hadoop fs -mkdir /input
 ```
 
-#### Step 2: Copy the dataset into input file
+#### Step 3: Copy the dataset into input file
 
 ```bash
     hadoop fs -put ./Data/tweets_data.csv /input
 ```
 ![screenshot](./assets/Screenshot%20(245).png)
 
-#### Step 3: Run the hashtag count job
+#### Step 4: Run the hashtag count job
 
 ```bash
     hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \ 
@@ -30,7 +30,7 @@
 ```
 ![screenshot](./assets/Screenshot%20(246).png)
 
-#### Step 4: Run the hashtag sentiment analysis job
+#### Step 5: Run the hashtag sentiment analysis job
 
 ```bash
     hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \
@@ -41,7 +41,7 @@
 ```
 ![screenshot](./assets/Screenshot%20(249).png)
 
-#### Step 5: Run the user sentiment analysis job
+#### Step 6: Run the user sentiment analysis job
 
 ```bash
     hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar \
