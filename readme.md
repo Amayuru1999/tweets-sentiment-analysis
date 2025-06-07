@@ -32,3 +32,9 @@ This can be extended to:
 - Hashtag frequency per sentiment
 - Average tweet length per sentiment
 - Time-based sentiment trends (if timestamp is included)
+
+### 📦 Hadoop Installation
+
+Follow this guide to install Apache Hadoop on Ubuntu system
+
+- [Hadoop Installation Guide](https://medium.com/@abhikdey06/apache-hadoop-3-3-6-installation-on-ubuntu-22-04-14516bceec85)
