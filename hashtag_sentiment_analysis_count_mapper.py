@@ -5,13 +5,13 @@ import re
 
 for line in sys.stdin:
     try:
-        fields = next(csv.reader([line]))
+        fields = next(csv.reader([line]))  # Parse CSV row
         if len(fields) < 6:
             continue
-        sentiment = fields[0].strip()
-        tweet = fields[5].strip().lower()
-        hashtags = re.findall(r"#\w+", tweet)
+        sentiment = fields[0].strip()           # Sentiment value (0, 2, 4)
+        tweet = fields[5].strip().lower()       # Tweet text, lowercased
+        hashtags = re.findall(r"#\w+", tweet)   # Extract hashtags
         for tag in hashtags:
-            print(f"{tag}\t{sentiment}")
+            print(f"{tag}\t{sentiment}")        # Emit: hashtag \t sentiment
     except Exception:
         continue

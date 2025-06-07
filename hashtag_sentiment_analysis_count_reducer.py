@@ -2,10 +2,10 @@
 import sys
 
 current_tag = None
-counts = {"0": 0, "2": 0, "4": 0}  # Negative, Neutral, Positive
+counts = {"0": 0, "2": 0, "4": 0}  # Sentiment categories: 0=Negative, 2=Neutral, 4=Positive
 header_printed = False
 
-# Column widths
+# Column widths for aligned output
 TAG_WIDTH = 30
 COL_WIDTH = 10
 

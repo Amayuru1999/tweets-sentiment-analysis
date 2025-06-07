@@ -2,10 +2,10 @@
 import sys
 
 current_user = None
-counts = {"0": 0, "2": 0, "4": 0}  # Negative, Neutral, Positive
+counts = {"0": 0, "2": 0, "4": 0}  # Sentiment labels: 0=Negative, 2=Neutral, 4=Positive
 header_printed = False
 
-# Column width definitions
+# Column widths for aligned output
 USER_COL_WIDTH = 20
 COL_WIDTH = 10
 
@@ -22,7 +22,7 @@ for line in sys.stdin:
 
         if user != current_user:
             if current_user:
-                print(format_line(current_user, counts['4'], counts['2'], counts['0']))
+                print(format_line(current_user, counts["4"], counts["2"], counts["0"]))
             current_user = user
             counts = {"0": 0, "2": 0, "4": 0}
 
@@ -33,4 +33,4 @@ for line in sys.stdin:
         continue
 
 if current_user:
-    print(format_line(current_user, counts['4'], counts['2'], counts['0']))
+    print(format_line(current_user, counts["4"], counts["2"], counts["0"]))
